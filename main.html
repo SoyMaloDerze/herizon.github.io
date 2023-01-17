@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>harizonalmedia.com</title>
+    <link rel="stylesheet" href="herizon.css" />
+    <link rel="stylesheet" href="reponsive.css">
+  </head>
+  <body>
+    <section id="home">
+      <header>
+        <div class="qlinks">
+          <a href="#work"><div class="work">WORK</div></a
+          ><a href="#profile"><div class="profile">PROFILE</div></a
+          ><a href="#contactMe"><div class="contactMe">CONTACT</div></a>
+        </div>
+        <div class="contact">
+          <img id="menu" onclick="menuToggle()" src="menu-right.png" alt="menu">
+          <div class="contactA">
+            <a href="https://wa.me/message/LBWESQDH2FAVL1" title="Whatsapp"><img src="whatsapp.png" alt="whatsapp" /></a
+              ><a href="https://twitter.com/HarizonaHq" title="Twitter"
+                ><img src="twitter-bird-blue.png" alt="twitter" /></a
+              ><a href=mailto:"harizonmedia@gmail.com" target="_blank" title="Mail"><img src="gmail.png" alt="mail" /></a>
+              <a href="https://www.instagram.com/brightimedia" title="Instagram"><img src="instagram.png" alt="instagram" /></a>
+          </div>
+          </div>
+      </header>
+
+      <main class="homeBackground">
+        <div class="homz"><video autoplay muted loop disablePictureInPicture controlsList="nodownload" id="homzVideo">
+          <source src="homz.mp4" type="video/mp4">
+        </video></div>
+        <div class="intro">
+          <h1>
+            <span style="color: black">DESIGN</span>
+            <span style="color: navy">VIDEO</span>
+            <span style="color: red">GRAPHICS</span>
+          </h1>
+        </div>
+
+        <div class="more"></div>
+      </main>
+    </section>
+
+    <section id="work">
+      <div class="workHead">
+        <h1>
+          <span style="color: black">W</span><span style="color: navy">O</span
+          ><span style="color: navy">R</span><span style="color: black">K</span>
+        </h1>
+      </div>
+
+      <div class="workMain">
+        <div class="picBox">
+          <a href="photo-1.jpg">
+            <div><img src="photo-1.jpg" /></div>
+          </a>
+          <a href="photo-2.jpg">
+            <div><img src="photo-2.jpg" /></div>
+          </a>
+          <a href="photo-3.jpg">
+            <div><img src="photo-3.jpg" /></div>
+          </a>
+          <a href="photo-4.jpg">
+            <div><img src="photo-4.jpg" /></div>
+          </a>
+          <a href="photo-5.jpg">
+            <div><img src="photo-5.jpg" /></div>
+          </a>
+          <a href="photo-6.jpg">
+            <div><img src="photo-6.jpg" /></div>
+          </a>
+
+          <a href="photo-7.jpg">
+            <div><img src="photo-7.jpg" /></div>
+          </a>
+          <a href="photo-1.jpg">
+            <div><img src="photo-1.jpg" /></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile">
+      <div class="profileHead">
+        <h1>P<span style="color: navy;">ROFIL</span>E
+        </h1>
+      </div>
+      <div class="profileMain">
+        <div class="owner">
+          <div class="ownerPic"><img src="profile-2.jpg" alt="harizon"></div>
+          <div class="ownerText">
+            <p>Hello!</p>
+            <h2>I am Bright Eboka.</h2>
+            <h2>A graphic designer based in Nigeria.</h2>
+
+            <div class="ownerAbout" onclick="moreAboutMe()">Read More</div>
+            <div id="moreAbout">
+              <div id="close" onclick="closeAboutMe()"><img src="close.png" alt="close"></div>
+              <p>6+ years of experience in Graphics designing. My mission is to design what you and your audience would love.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="services">
+          <h1>S<span style="color: navy;">ERVICE</span>S</h1>
+
+          <div class="serviceBox">
+            <div>
+              <img src="photography.png" alt="photography">
+              <p>PHOTOGRAPHY</p>
+            </div>
+            <div>
+              <img src="video.png" alt="video">
+              <p>VIDEO EDITING</p>
+            </div>
+            <div>
+              <img src="logo-design.png" alt="logo">
+              <p>LOGO DESIGN</p>
+            </div>
+            <div>
+              <img src="print.png" alt="print">
+              <p>PRINT DESIGN</p>
+            </div>
+            <div>
+              <img src="digital-marketing.png" alt="digital">
+              <p>DIGITAL MARKETING</p>
+            </div>
+            <div>
+              <img src="social-media.png" alt="social">
+              <p>SOCIAL MEDIA MARKETING</p>
+            </div>
+          </div>
+          <div class="talk">
+            <button id="talkNow" onclick="contactMeButton()">Hire Me!</button>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <section id="contactMe">
+      <div class="contactMeHead"><h1>C<span style="color: navy;">ONTAC</span>T</h1></div>
+
+      <div class="contactMeMain">
+        <div class="contactPic">
+          <img src="talkPic.jpeg" alt="contactMe">
+        </div>
+        <div class="contactText">
+          <form id="talkNow" action="https://formspree.io/f/moqzqrpy" method="POST">
+
+            <h3>GET IN TOUCH</h3>
+
+            
+              <tr>
+                <td>
+                  <label for="Name">Name<span style="color: red;">*</span></label>
+                </td>
+
+                <td>
+                  <input name="Name" id="name" type="text" autocomplete="off" required>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="emailAddress">Email Address<span style="color: red;">*</span></label>
+                </td>
+
+                <td>
+                  <input name="Email" type="email" id="email" autocomplete="off"  required>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="Subject">Subject<span style="color: red;">*</span></label>
+                </td>
+
+                <td>
+                  <select name="Subject" id="subject" >
+                    <option value="Logo Design">Logo Design</option>
+                    <option value="Affiliate Marketing">Affiliate Marketing</option>
+                    <option value="Photography">Photography</option>
+                    <option value="Print Design">Print Design</option>
+                    <option value="UI/UX">UI/UX</option>
+                    <option value="Info Graphics">Info Graphics</option>
+                    <option value="Video Editing">Video Editing</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                  </select>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <label for="Message">Your Message Here<span style="color: red;">*</span></label>
+                </td>
+
+                <td>
+                  <textarea name="Message" id="message" cols="40" rows="7"></textarea>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <button id="sendBtn">Submit<img src="send.png" alt="send"></button>
+                </td>
+              </tr>
+            
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="herizon.js"></script>
+</html>
